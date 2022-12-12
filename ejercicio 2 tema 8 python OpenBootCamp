@@ -1,0 +1,24 @@
+import pickle
+
+class Vehiculo:
+  categoria = ""
+  precio = 0.0
+  
+  def __init__(self, categoria, precio):
+      self.categoria = categoria
+      self.precio    = precio
+      
+  def getCategoria(self):
+      return self.categoria
+      
+v1 = Vehiculo ("cabrio", 40.000)
+
+# f = open ("Vehiculo.txt" , "wb")
+# pickle.dump(v1, f)                para introducir datos y crear documento
+# f.close
+
+# f = open ("Vehiculo.txt , "rb")
+# Vehiculo = pickle.load (f)
+# f.close
+
+print(Vehiculo.getCategoria())
